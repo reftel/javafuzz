@@ -41,23 +41,25 @@ or hangs/they run more the the specified timeout limit per testcase.
 ### Installing
 Add this to your `pom.xml`
 
-```yaml
-  <dependencies>
-    <dependency>
-      <groupId>dev.fuzzit.javafuzz</groupId>
-      <artifactId>core</artifactId>
-      <version>1.23-SNAPSHOT</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+```xml
+<dependencies>
+  <dependency>
+    <groupId>dev.fuzzit.javafuzz</groupId>
+    <artifactId>core</artifactId>
+    <version>1.22</version>
+    <scope>test</scope>
+  </dependency>
+</dependencies>
 
-<plugin>
-        <plugin>
-          <groupId>dev.fuzzit.javafuzz</groupId>
-          <artifactId>javafuzz-maven-plugin</artifactId>
-          <version>1.22</version>
-        </plugin>
-</plugins>
+<build>
+  <plugins>
+    <plugin>
+      <groupId>dev.fuzzit.javafuzz</groupId>
+      <artifactId>javafuzz-maven-plugin</artifactId>
+      <version>1.22</version>
+    </plugin>
+  </plugins>
+</build>
 ```
 
 
